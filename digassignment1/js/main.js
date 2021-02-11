@@ -25,8 +25,8 @@ class MyScene extends Phaser.Scene {
         game.load.baseURL = 'http://examples.phaser.io/assets/';
         game.load.crossOrigin = 'anonymous';
 
-        game.load.image('player', 'sprites/dude.png');
-        game.load.image('platform', 'sprites/platform.png');
+        game.load.image('player', 'assets/dude.png');
+        game.load.image('platform', 'assets/platform.png');
     }
     
     create() {
