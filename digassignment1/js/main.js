@@ -13,6 +13,8 @@ import "./phaser.js";
 
 class MyScene extends Phaser.Scene {
     
+    
+
     constructor() {
         super();
         
@@ -20,16 +22,23 @@ class MyScene extends Phaser.Scene {
     }
     
     preload() {
+
         game.stage.backgroundColor = '#85b5e1';
 
         game.load.baseURL = 'http://examples.phaser.io/assets/';
         game.load.crossOrigin = 'anonymous';
 
-        game.load.image('player', 'assets/dude.png');
-        game.load.image('platform', 'assets/platform.png');
+        game.load.image('player', 'sprites/phaser-dude.png');
+        game.load.image('platform', 'sprites/platform.png');
     }
     
     create() {
+
+        var player;
+        var platforms;
+        var cursors;
+        var jumpButton;
+
         player = game.add.sprite(100, 200, 'player');
 
         game.physics.arcade.enable(player);
