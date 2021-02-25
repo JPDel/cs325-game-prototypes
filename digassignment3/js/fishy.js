@@ -47,14 +47,14 @@ function create ()
 
     this.add.image(400, 350, 'underwater').setScale(1);
 
-    player = this.physics.add.image(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 'sprite').setScale(Math.floor(Math.random() * 3) + 1);
+    player = this.physics.add.image(Math.floor(Math.random() * 800), Math.floor(Math.random() * 600), 'sprite').setScale(Math.floor(Math.random() * 3) + 1);
     player.setDamping(true);
     player.setDrag(.5);
     player.setMaxVelocity(100);
 
-    shark = this.physics.add.image(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 'shark').setScale(Math.floor(Math.random() * 4) + 2);
+    shark = this.physics.add.image(Math.floor(Math.random() * 1000), Math.floor(Math.random() * 1000), 'shark').setScale(Math.floor(Math.random() * 4) + 2);
 
-    food = this.physics.add.image(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 'food').setScale(next);
+    food = this.physics.add.image(Math.floor(Math.random() * 750), Math.floor(Math.random() * 550), 'food').setScale(next);
 
     cursors = this.input.keyboard.createCursorKeys();
 
@@ -100,8 +100,8 @@ function update ()
 
 function collectFood(player, food)
 {
-    food.x = Math.floor(Math.random() * 800);
-    food.y = Math.floor(Math.random() * 600);
+    food.x = Math.floor(Math.random() * 750);
+    food.y = Math.floor(Math.random() * 550);
     food.setScale(next);
     score += next;
     next = Math.floor(Math.random() * 4) + 1
