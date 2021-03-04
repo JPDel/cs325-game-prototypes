@@ -42,12 +42,12 @@ function preload ()
     this.load.image('star', 'assets/star.png');
     this.load.image('harold', 'assets/sickharold.png');
     this.load.image('cherry', 'assets/cherry.png');
-    this.load.audio('weasel', ['assets/weasel.mp3', 'assets/weasel.ogg']);
+    this.load.audio('ska', ['assets/ska.mp3', 'assets/ska.ogg']);
 }
 
 function create ()
 {
-    bgm = this.sound.add('weasel');
+    bgm = this.sound.add('ska');
     bgm.play();
 
     this.add.image(400, 300, 'sky').setScale(1.5);
