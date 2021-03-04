@@ -82,6 +82,21 @@ function create ()
 
 function update ()
 {
+    player.setVelocityX(0);
+
+    if (cursors.left.isDown)
+    {
+        player.setVelocityX(-320);
+
+    }
+    else if (cursors.right.isDown)
+    {
+        player.setVelocityX(320);
+    }
+    else
+    {
+        
+    }
 
     if (cursors.up.isDown && player.body.touching.down)
     {
