@@ -19,100 +19,94 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>Your game title</h2>
+<h2>Harold Pro Skater</h2>
 
 <ul>
 <li><strong>Originality:</strong>
-While collecting objects was something you could do in the base code, collecting a certain number didn't do anything in particular.<br>
-I made it so that collecting all of the chemicals is a win condition.<br>
-<br>
-Additionally, I added a cherry powerup that boosts the players jump when collected.<br> 
-<br>
-I made it so that a few of the chemicals stay at the top of the screen, so that players must use the powerups strategically.<br>
+I think the general gameplay loop I went for this week is somewhat common, but I spiced things up with increasing speed, and variable obstacle size.<br>
 <br></li>
 
 <li><strong>Technical Merit:</strong>
-The most technical thing I added was the powerups that boost the player's jump<br><br>
+My game's most technical aspect was the jump mechanics that I programmed. I tried to make it feel closer to something like the jump in Super Mario Bros, where letting go of the jump button would cause a jump to end early.<br>
+Unfortunately I didn't get it completely the way I wanted it, and to do so, I'd need to control acceleration as well I think.<br><br>
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
 What did you learn from this prototype?<br>
 <br>
-Mostly how to implement base code, but also how to create child objects, and how to edit properties of those objects.<br>
+How to more precisely control a character, adding different velocities to the player, and controlling those velocities with booleans.<br>
 <br>
 What was the easiest or hardest part of making it?<br>
 <br>
-The easiest part was actually editing properies of objects, since all I had to do was check some of the documentation to see what was possible.<br>
+The hardest part was getting the cone with variable size to reset properly every time, since it would fall through the floor at some sizes in playtesting.<br>
 <br>
-The hardest part was implementing the base code into my github website, since a lot of the time it resulted in a black screen.<br>
-It took me a few hours at least to actually get any kind of working prototype up and running.<br><br>
 </li>
 
 <li><strong>Prototype Assets:</strong>
 
+I created the player character by splicing a stock photo with a piece of clipart.<br>
 <br>
-All assets I used were created by Kenney<br>
+All other assets I used were created by Kenney, save for the traffic cone, which was clipart.<br>
 <br>
-Royalty free music by Kevin Macleod<br><br>
+Royalty free music by Kevin Macleod.<br><br>
 
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Base Code I Used: <a href="https://phaser.io/examples/v3/view/physics/arcade/basic-platform">Basic Platform
-</a> <br><br>
+I didn't base this game off of any specific title, although I tried to create a game that was similar to the old flash game Ski Runner, which had increasing difficulty through increased game speed.
+<br><br>
 </li>
 
 <li><strong>High Concept:</strong>
-The player must collect (clean up) all of the chemical flasks on the level to pass the level<br><br>
+The player takes control of Harold, looking to reclaim his youth by doing sick ollies on his skateboard!<br><br>
 </li>
 
 <li><strong>Theme:</strong>
-I used the chemist theme<br><br>
+I used the elderly person theme<br><br>
 </li>
 
 <li><strong>Mandated Variety:</strong>
 State which input, randomness, genre, and play style you used in this prototype.<br>
-<br>While the game is largely deterministic, it is random which chemicals will stay at the top of the screen.<br>
-<br>The game is a platformer, but in some regards is also like a puzzle game too.<br>
-<br>The playstyle is more strategic than precision-based, since the player has a limited number of powerups.<br><br>
+<br>The game is deterministic, relying heavily on player reaction time and spacing.<br>
+<br>The game is a platformer-esque, with some arcadey elements.<br>
+<br>The playstyle is highly precision-based.<br><br>
 </li>
 
 <li><strong>Prototype Goal:</strong>
 What game mechanic is this prototype evaluating?<br>
-<br>Primarily jump boosting powerups<br><br>
+<br>Variable jump heights<br><br>
 </li>
 
 <li><strong>Player Experience Goals:</strong>
 <br>What experience do you want players to have when playing your game?<br>
-<br>I mostly want players to feel satisfaction upon using powerups in a strategic fashion to collect the chemicals<br><br>
+<br>I mostly want players to feel the excitement and hecticness of controlling a character that is moving too fast.<br><br>
 </li>
 
 <li><strong>Gameplay:</strong>
-<br>Players can perform basic movement, such as moving left and right, as well as jumping with the arrow keys. The core mechanic is collecting the chemical tokens. This can be aided through the use of cherry powerups which boost the robots jump.<br>
-However, players may find that if they waste their powerups, the level may be unbeatable.<br><br>
-Powerups aren't necessarily limited to just shooting the player up or only for collecting specific chemicals. They may be used to perform all sorts of movement, whether that be shooting a player forward, teleporting, or moving to a specific part of the level/towards other powerups<br><br>
+<br>Players can perform horizontal movement. The core mechanic, however is the jumping, which can be ended early to fall faster, potentially allowing the player to dodge more obstacles.<br><br>
+If I had more development time I might add powerups, or scaling gravity, to allow players the opportunity for more skillful gameplay.<br><br>
 </li>
 
 <li><strong>Strategies:</strong>
 What player strategies do you expect will be effective at playing this game?<br>
-<br>I expect that the players who plan out which powerups they should use for which chemical tokens will be the most successful in this game.<br><br>
+<br>I expect that the players who let go of the jump button to start falling as soon as they clear each cone will be the most successful in this game.<br><br>
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
 A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
 How will the dramatic tension interact with the gameplay tension?<br>
 <br>
-In this game, you control a robot in a lab. A few of the scientists dropped some very toxic chemicals and are relying on you to collect them so that they can continue working. While the premise is a little serious, the actual gameplay is more casual, so the dramatic and gameplay tensions don't really clash too hard.
+In this game, you control Harold, who is sick and tired of being seen as an old fogey. He decides that the only way to break out of his image is to become a professional skater, so you must help him control his skateboard as he practices.
 <br><br></li>
 
 <li><strong>Target Audience:</strong>
 A single sentence that describes the demographic you're trying to reach.<br><br>
-The target demographic is players who enjoy platformers with puzzle-like elements.<br><br>
+The target demographic is players who enjoy platformers.<br><br>
 </li>
 
 <li><strong>Play Time:</strong>
 How long does your game take to play?<br><br>
-Each level shouldn't take more than a couple minutes to play out once you've figured out the solution.<br>
+Generally less than a minute, but technically could go for a little longer.<br>
 </li>
 
 </ul>
