@@ -107,6 +107,8 @@ function update ()
     {
         fox.x = 1000;
         fox.y = 1000;
+        falcon.x = 1000;
+        falcon.y = 1000;
         text.setText([
             'Your final score: ' + counter.toString()
         ]);
