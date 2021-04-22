@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mission Complete!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Multishine</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The original code only has an on-click event, I added functionality to the click by adding a scoring system, as well as the teleporting mechanic, as well as making it so that the on-click event only triggers when you click on the sprite, not just when you click in general.<br>
+<br>
+Additionally, I changed all assets<br>
+<br></li>
+
+<li><strong>Technical Merit:</strong>
+The most technical thing I added was modifying the on-click event and adding sound effects<br><br>
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?<br>
+<br>
+How to modify events and add sound effects.<br>
+<br>
+What was the easiest or hardest part of making it?<br>
+<br>
+The hardest part was knowing where to put each on click event, since scoring in the update function made it go up by around 100 each click, but moving the sprite in the create function did nothing.<br>
+<br>
+The actual coding itself was rather easy.<br>
+<br>
+</li>
+
+<li><strong>Prototype Assets:</strong>
+
+<br>
+I created the fox image in gimp.<br>
+<br>
+Music from the following soundcloud: <a href="https://soundcloud.com/hopelessmope/dreamland-guitar">Gourmet Race for Four Guitars</a><br>
+<br>
+Pixel art by Daniel Bernal: <a href="https://bernalstudio.com/projects/oOzAYO">Bernal Studio</a>
+<br>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Base Code I Used: <a href="https://phaser.io/examples/v3/view/time/remove-timer-event">Remove Timer Event
+</a>
+I also used this code as a reference, but did not explicitly copy it: <a href="https://phaser.io/examples/v3/view/input/mouse/click-sprite">Click Sprite
+</a><br><br>
+</li>
+
+<li><strong>High Concept:</strong>
+The player must try to help fox shine as many times as possible in 20 seconds by clicking on him.<br><br>
+</li>
+
+<li><strong>Theme:</strong>
+The game challenge I used was that it takes exactly 20 seconds to play.<br><br>
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The game is by and large deterministic with some minor randomness.<br>
+<br>I can't really think of a genre classification other than "arcade"<br>
+<br>The playstyle is largely precision-based, although the spots that fox goes to are random<br><br>
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Sprite interaction/functions as well as playing sound effects on specific events.<br><br>
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+My main goal is for players to get an arcadey try-to-get-a-highscore feeling.<br><br>
+</li>
+
+<li><strong>Gameplay:</strong>
+Players help fox perform a shine by clicking on him, wherever he may go to on the stage. Click to Start!<br><br>
+</li>
+
+<li><strong>Strategies:</strong>
+Players who are able to react quickly and be very accurate with their clicks will have the highest score.<br>
+<br></li>
+
+<li><strong>Story/Setting/Premise:</strong>
+In this game, you are helping fox to practice his waveshine and multishine tech! He needs to be in top shape for his next tournament, so try to help fox shine at least 40 times in 20 seconds!
+<br><br></li>
+
+<li><strong>Target Audience:</strong>
+Players who like precision-based games and those who are fans of Super Smash Brothers.<br><br>
+</li>
+
+<li><strong>Play Time:</strong>
+20 Seconds<br><br>
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/multishine.js" type="module"></script>
+</body>
+</html>
