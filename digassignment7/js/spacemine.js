@@ -59,7 +59,7 @@ function create ()
 
     pirate = this.physics.add.image(Math.floor(Math.random() * 1000), Math.floor(Math.random() * 1000), 'pirate').setScale(0.5);
     station = this.physics.add.image(700, 350, 'station').setScale(0.25);
-    mineral = this.physics.add.image(Math.floor(50 + (Math.random() * 300)), Math.floor(100 + (Math.random() * 600)), 'mineral').setScale(0.1);
+    mineral = this.physics.add.image(Math.floor(50 + (Math.random() * 300)), Math.floor(100 + (Math.random() * 300)), 'mineral').setScale(0.1);
 
     cursors = this.input.keyboard.createCursorKeys();
 
@@ -113,8 +113,8 @@ function update ()
 
 function collectMineral(player, mineral)
 {
-    mineral.x = Math.floor(100 + (Math.random() * 300));
-    mineral.y = Math.floor(100 + (Math.random() * 600));
+    mineral.x = Math.floor(50 + (Math.random() * 300));
+    mineral.y = Math.floor(100 + (Math.random() * 300));
     playerMinerals += 1;
     pirateVel += 25;
 }
@@ -137,7 +137,7 @@ function depositMineral(player, station)
     if(playerMinerals == 0) {
         return;
     }
-    stationMinerals = playerMinerals;
+    stationMinerals += playerMinerals;
     playerMinerals = 0;
     pirateVel = 100;
 }
